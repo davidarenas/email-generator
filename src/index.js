@@ -1,0 +1,1 @@
+import './templates/demo.js';

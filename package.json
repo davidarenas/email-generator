@@ -1,0 +1,27 @@
+{
+  "name": "email-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "build": "babel src --out-dir dist",
+    "build:watch": "babel src --out-dir dist",
+    "prestart": "npm run build",
+    "start": "npm run build:watch & node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faire/mjml-react": "^3.3.0",
+    "mjml": "^4.14.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15"
+  }
+}
